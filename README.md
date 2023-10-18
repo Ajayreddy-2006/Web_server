@@ -82,7 +82,6 @@ httpd.serve_forever()
 ```
 
 # OUTPUT:
-![output]
 ![webserver1](https://github.com/Ajayreddy-2006/Web_server/assets/145742508/c000ae31-9507-4297-bb9c-8f8db16d2831)
 
 # RESULT:
