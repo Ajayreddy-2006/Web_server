@@ -53,7 +53,7 @@ server_address = ('',80)
 httpd = HTTPServer(server_address,HelloHandler)
 httpd.serve_forever()
 # OUTPUT:
-![Alt Text](images/Screenshot%202023-10-05%20093908.png)
+![Alt Text](https://github.com/Ajayreddy-2006/Web_server/blob/main/images/Screenshot%202023-10-05%20093908.png)
 
 # RESULT:
 
