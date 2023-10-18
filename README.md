@@ -1,7 +1,9 @@
 # Developing a Simple Webserver
-Name: ajay
-ID: 23007325
+Name : T.Ajay
 
+ID : 23007325
+
+ Dept : AIML 
 # AIM:
 
 Develop a webserver to display about top five web application development frameworks.
@@ -20,31 +22,6 @@ Design of webserver workflow
 
 Implementation using Python code
 
-from http.server import HTTPServer, BaseHTTPRequestHandler
-
-content = """
-<html>
-<head>
-<body>
-<h1>Welcome</h1>
-</body>
-</head>
-</html>
-"""
-
-class HelloHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request recieved")
-        self.send_response(200)
-        self.send_header('Content-type','text/html;charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-
-print("This is my webserver")
-server_address = ('',80)
-httpd = HTTPServer(server_address,HelloHandler)
-httpd.serve_forever()
-
 ## Step 4:
 
 Serving the HTML pages.
@@ -54,183 +31,43 @@ Serving the HTML pages.
 Testing the webserver
 # PROGRAM:
 
-```python
+```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = """
 <html>
 <head>
-<body>
-<h1>Welcome</h1>
-</body>
 </head>
+<body>
+<h1>Top Five Web Application Development Frameworks</h1>
+
+<h1>1. Django</h1>
+<h1>2. MEAN Stack</h1>
+<h1>3. React</h1>
+<h1>4. Ruby on Rails</h1>
+<h1>5. Angular</h1>
+
+</body>
 </html>
 """
 
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        print("Get request recieved")
+        print("Get request received")
         self.send_response(200)
-        self.send_header('Content-type','text/html;charset=utf-8')
+        self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
 
-print("This is my webserver")
-server_address = ('',80)
-httpd = HTTPServer(server_address,HelloHandler)
+print("This is my web server")
+server_address = ('', 80)
+httpd = HTTPServer(server_address, HelloHandler)
 httpd.serve_forever()
 ```
 
-# OUTPUT:
-![webserver1](https://github.com/Ajayreddy-2006/Web_server/assets/145742508/c000ae31-9507-4297-bb9c-8f8db16d2831)
 
+# OUTPUT:
+![output](images/WhatsApp%20Image%202023-10-18%20at%2018.48.02_458ec190.jpg)
 # RESULT:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The program is executed succesfully
+The program is executed succesfully.
