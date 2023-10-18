@@ -82,16 +82,11 @@ httpd.serve_forever()
 ```
 
 # OUTPUT:
-<<<<<<< HEAD
 ![output](webserver-1.jpg)
-=======
-![Alt Text](https://github.com/Ajayreddy-2006/Web_server/blob/89db7fb1ade387d879ad62c742e888ae1e521f0a/images/Screenshot%202023-10-05%20093908.png)
->>>>>>> f0233cadc7f47f6c278bdc3c912fe59694982f31
 
 # RESULT:
 
 
-<<<<<<< HEAD
 
 
 
@@ -239,6 +234,3 @@ httpd.serve_forever()
 
 
 The program is executed succesfully
-=======
-The programe is executed succesfully
->>>>>>> f0233cadc7f47f6c278bdc3c912fe59694982f31
